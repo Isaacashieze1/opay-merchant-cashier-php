@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lambent-begonia-7ca407.netlify.app/sitemap.xml

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tools & Digital Products Shop | Instant Access</title>
+  <meta name="description" content="12 AI-powered digital products built for entrepreneurs ready to turn AI into income: ChatGPT toolkits, TikTok & Instagram growth systems, courses, templates and more. Instant access, secure checkout." />
+  <meta name="keywords" content="AI tools, digital products, ChatGPT prompts, TikTok monetization, Instagram growth, digital downloads, Selar store, side hustle, online courses" />
+  <link rel="canonical" href="https://lambent-begonia-7ca407.netlify.app/" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Tools & Digital Products Shop" />
+  <meta property="og:description" content="12 products built for entrepreneurs ready to turn AI into income. Instant access, secure checkout." />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta property="og:url" content="https://lambent-begonia-7ca407.netlify.app/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Tools & Digital Products Shop" />
+  <meta name="twitter:description" content="12 products built for entrepreneurs ready to turn AI into income." />
+  <meta name="twitter:image" content="/assets/og-image.png" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f7cff'/%3E%3Cstop offset='1' stop-color='%23b06cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='sans-serif'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "AI Tools & Digital Products",
+    "itemListElement": [
+      {"@type":"Product","position":1,"name":"ChatGPT Mastery Toolkit","description":"Complete prompt library + workflow automation for ChatGPT power users"},
+      {"@type":"Product","position":2,"name":"TikTok Monetization Blueprint","description":"Step-by-step system to earn $1,000+/month from TikTok using AI content"},
+      {"@type":"Product","position":3,"name":"Instagram AI Growth System","description":"AI-powered content calendar, caption generator, and hashtag strategy"},
+      {"@type":"Product","position":4,"name":"Email Marketing Templates Pack","description":"500+ proven email templates for every niche and campaign type"},
+      {"@type":"Product","position":5,"name":"Side Hustle Starter Kit","description":"Everything you need to launch your first AI-powered income stream in 7 days"},
+      {"@type":"Product","position":6,"name":"Digital Product Launch Playbook","description":"Complete A-Z system to create, launch, and sell your first digital product"},
+      {"@type":"Product","position":7,"name":"Microsoft Office Pro Bundle","description":"Full suite of Microsoft productivity tools and templates"},
+      {"@type":"Product","position":8,"name":"Reddit AI Traffic Machine","description":"Use AI to drive massive organic traffic from Reddit communities"},
+      {"@type":"Product","position":9,"name":"Wikipedia Content Strategy","description":"Leverage Wikipedia for SEO, research, and AI-powered content creation"},
+      {"@type":"Product","position":10,"name":"Canva AI Design Mastery","description":"Create stunning digital products and social media content with Canva + AI"},
+      {"@type":"Product","position":11,"name":"ChatGPT for Business Automation","description":"Automate your entire business workflow using ChatGPT prompts and integrations"},
+      {"@type":"Product","position":12,"name":"TikTok AI Content Calendar","description":"30-day AI-generated TikTok content plan with hooks, scripts, and captions"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo-mark">⚡</span>
+      <span class="logo-text">Shop</span>
+    </div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+    </nav>
+    <a class="cart-link" href="#" id="storeLinkTop" target="_blank" rel="noopener">
+      🛒 Cart
+    </a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <p class="eyebrow">ALL PRODUCTS</p>
+      <h1><span>AI Tools &amp;</span><span class="gradient-chip">Digital Products</span></h1>
+      <p class="subtitle">12 products built for entrepreneurs ready to turn AI into income.</p>
+      <div class="trust-bar">
+        <span>🔒 Secure checkout via Selar</span>
+        <span>⚡ Instant digital delivery</span>
+        <span>🌍 Available worldwide</span>
+      </div>
+    </section>
+
+    <section class="controls">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input id="searchInput" type="search" placeholder="Search products…" aria-label="Search products" />
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="AI Tools">AI Tools</button>
+        <button class="filter-btn" data-filter="Courses">Courses</button>
+        <button class="filter-btn" data-filter="Software">Software</button>
+        <button class="filter-btn" data-filter="Templates">Templates</button>
+        <button class="filter-btn" data-filter="Marketing">Marketing</button>
+      </div>
+    </section>
+
+    <p class="count" id="resultCount">Showing 12 products</p>
+
+    <section id="products" class="product-grid"></section>
+    <p class="no-results" id="noResults" hidden>No products match your search.</p>
+
+    <section class="promote">
+      <h2>Love these products? Share the shop</h2>
+      <p>Sharing with your audience is the fastest way to grow sales — pick a channel below.</p>
+      <div class="share-row">
+        <a class="share-btn" id="shareTwitter" href="#" target="_blank" rel="noopener">Share on X</a>
+        <a class="share-btn" id="shareFacebook" href="#" target="_blank" rel="noopener">Share on Facebook</a>
+        <a class="share-btn" id="shareWhatsapp" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+        <button class="share-btn" id="copyLink" type="button">Copy store link</button>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Not ready to buy yet?</h2>
+      <p>Leave your email and get notified when new products or discounts drop.</p>
+      <form
+        name="lead-signup"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        id="leadForm"
+        class="newsletter-form"
+      >
+        <input type="hidden" name="form-name" value="lead-signup" />
+        <p class="hidden-field"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address" />
+        <button type="submit">Notify me</button>
+      </form>
+      <p class="newsletter-status" id="leadStatus" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="brand">
+      <span class="logo-mark">⚡</span>
+      <span class="logo-text">Shop</span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+    </nav>
+    <p>© 2026 SelarShop. All rights reserved.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
