@@ -103,6 +103,25 @@
         <button class="share-btn" id="copyLink" type="button">Copy store link</button>
       </div>
     </section>
+
+    <section class="newsletter">
+      <h2>Not ready to buy yet?</h2>
+      <p>Leave your email and get notified when new products or discounts drop.</p>
+      <form
+        name="lead-signup"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        id="leadForm"
+        class="newsletter-form"
+      >
+        <input type="hidden" name="form-name" value="lead-signup" />
+        <p class="hidden-field"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address" />
+        <button type="submit">Notify me</button>
+      </form>
+      <p class="newsletter-status" id="leadStatus" role="status"></p>
+    </section>
   </main>
 
   <footer class="site-footer">

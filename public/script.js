@@ -85,6 +85,30 @@ document.getElementById("shareTwitter").href = `https://twitter.com/intent/tweet
 document.getElementById("shareFacebook").href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
 document.getElementById("shareWhatsapp").href = `https://wa.me/?text=${shareText}%20${shareUrl}`;
 
+// Lead capture — submits to Netlify Forms without a page reload.
+const leadForm = document.getElementById("leadForm");
+const leadStatus = document.getElementById("leadStatus");
+
+leadForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(leadForm);
+  try {
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+    if (response.ok) {
+      leadStatus.textContent = "You're on the list! We'll email you about new drops and discounts.";
+      leadForm.reset();
+    } else {
+      leadStatus.textContent = "Something went wrong. Please try again.";
+    }
+  } catch {
+    leadStatus.textContent = "Something went wrong. Please try again.";
+  }
+});
+
 document.getElementById("copyLink").addEventListener("click", async (e) => {
   const btn = e.currentTarget;
   try {
