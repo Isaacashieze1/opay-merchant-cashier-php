@@ -1,6 +1,4 @@
 // Single place to update your Selar store/product link.
-// The link supplied was "shopify.selar.com" — confirm this resolves to your real
-// Selar storefront before going live, then update the value below if needed.
 const STORE_LINK = "https://shopify.selar.com";
 
 const PRODUCTS = [
